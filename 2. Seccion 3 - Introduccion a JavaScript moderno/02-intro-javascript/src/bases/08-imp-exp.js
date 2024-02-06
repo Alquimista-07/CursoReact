@@ -4,7 +4,9 @@
 // Import, export y funciones comunes de arreglos
 // Enlace con la documentación Array.prototype.find(): https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 
-import { heroes } from '../data/heroes';
+import heroes, { owners } from '../data/heroes';
+
+
 
 // const getHeroeById = (id) => {
 //     return heroes.find((heroe) => {
