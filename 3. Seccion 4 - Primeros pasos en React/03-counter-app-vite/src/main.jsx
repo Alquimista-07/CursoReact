@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom/client';
 
 // NOTA: Ojo el nombre que le demos a esta importación depende del nombre con el que estemos exportando
 //       la función o el functional component 
-import { HelloWorldApp } from './HelloWorldApp';
+// import { HelloWorldApp } from './HelloWorldApp';
+
+import { FirstApp } from './FirstApp';
 
 // Si hubieramos exportado por defecto la importación podría ser de la siguiente manera:
 // import HelloApp from './HelloWorldApp';
@@ -12,8 +14,9 @@ import { HelloWorldApp } from './HelloWorldApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <HelloWorldApp />
+        {/* <HelloWorldApp /> */}
         {/* Por lo tanto la si exportaramos e importaramos de la forma por defecto entonces la usariamos de la siguiente manera: */}
         {/* <HelloApp/> */}
+        <FirstApp />
     </React.StrictMode>
 );
