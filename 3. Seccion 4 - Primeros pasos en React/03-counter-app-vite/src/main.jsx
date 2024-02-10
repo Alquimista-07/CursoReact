@@ -8,6 +8,9 @@ import ReactDOM from 'react-dom/client';
 
 import { FirstApp } from './FirstApp';
 
+// Importación de los estilos css globales que creamos
+import './styles.css';
+
 // Si hubieramos exportado por defecto la importación podría ser de la siguiente manera:
 // import HelloApp from './HelloWorldApp';
 
