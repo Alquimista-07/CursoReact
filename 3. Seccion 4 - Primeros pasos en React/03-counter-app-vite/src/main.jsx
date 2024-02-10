@@ -2,19 +2,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// NOTA: Usualmente todo en react comienza con un componente o un functional componenet
-//       y es el punto de entrada de la aplicación y esos componentes no son más que una 
-//       función.
-//       Otra cosa es que podemos trabajar con clases pero estas ya no es muy recomendado usarlas
-//       aunque aún se pueda trabajar con ellas, lo recomendado es trabar con functional components
-function App() {
-    // Este return en pocas palabras es como si realizaramos en JS lo siguiente: 
-    // document.createElement... pero de una forma más sencilla y eleganta
-    return (<h1>Hola Mundo!!!</h1>);
-}
+// NOTA: Ojo el nombre que le demos a esta importación depende del nombre con el que estemos exportando
+//       la función o el functional component 
+import { HelloWorldApp } from './HelloWorldApp';
+
+// Si hubieramos exportado por defecto la importación podría ser de la siguiente manera:
+// import HelloApp from './HelloWorldApp';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App />
+        <HelloWorldApp />
+        {/* Por lo tanto la si exportaramos e importaramos de la forma por defecto entonces la usariamos de la siguiente manera: */}
+        {/* <HelloApp/> */}
     </React.StrictMode>
 );
