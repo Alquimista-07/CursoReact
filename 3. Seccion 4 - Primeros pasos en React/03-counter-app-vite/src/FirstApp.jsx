@@ -24,7 +24,13 @@ const getResult = (a, b) => {
     return a + b;
 }
 
-export const FirstApp = () => {
+// NOTA: Las properties o props permiten establecer el canal de comunciación entre el padre hacia los hijos
+//       Las props básicamente son los parámetros en la función los cuales los podemos encontrar como props 
+//       y usar la notación de punto para obtener las propiedades, o usualmente la mayoría del tiempo vamos 
+//       a encontrar la desestructuración de dichas propiedades.
+export const FirstApp = ( { title, subTitle } ) => {
+
+  // console.log(props);
 
   return (
     // NOTA: Recordemos que en React siempre debe existir un nodo padre que contenga a los demás elementos, que puede ser un div o un Fragment
@@ -35,9 +41,11 @@ export const FirstApp = () => {
    
     // <Fragment>
     <>
+        <h1>{ title }</h1>
         <h1>{ newMessage.title }</h1>
         <code>{ JSON.stringify(newMessage) }</code>
-        <p>Spy un subtitulo</p>
+        <p>Soy un subtitulo</p>
+        <p>{ subTitle }</p>
 
         {/* Acá lo que le estamos diciendo es que cuando llegue a renderizar esto, salta o ve a la función y renderiza el producto de la función
             el cual corresponde al valor de retorno que devuelve la función. OJO esto no quiere decir que renderice la función sino que renderice 

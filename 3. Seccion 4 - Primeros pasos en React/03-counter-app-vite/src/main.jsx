@@ -20,6 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* <HelloWorldApp /> */}
         {/* Por lo tanto la si exportaramos e importaramos de la forma por defecto entonces la usariamos de la siguiente manera: */}
         {/* <HelloApp/> */}
-        <FirstApp />
+        <FirstApp title = "Hola, Soy Goku!" />
     </React.StrictMode>
 );
