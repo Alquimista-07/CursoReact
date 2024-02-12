@@ -61,8 +61,22 @@ export const FirstApp = ( { title, subTitle } ) => {
   )
 }
 
+// NOTA: Por estándar los propTypes y defaultProptypes se definen luego del functional component.
+
 // NOTA: Con los propTypes podemos definir su tipo, y que campos son obligatorios u opcionales
 FirstApp.propTypes = {
   title : PropTypes.string.isRequired,
-  subTitle : PropTypes.number,
+  subTitle : PropTypes.string,
+}
+
+// NOTA: Los defaultProps entran antes de los propTypes por lo tanto si no los mandamos desde el componente y tienen un valor por defecto
+//       no va a causar ningún tipo de error. Adicionalmente podemos mandar otras propiedades adicionales que incluso no hayamos definido 
+//       previamente.
+//       Otra cosa interesante es que si mandamos un valor por defecto que no concuerde con el tipo definido en el propType esto nos va a
+//       marcar el error, cosa que si lo hicieramos directamente igualando la variable a un valor por defecto en el prop de la función no
+//       nos marcaría el error.
+FirstApp.defaultProps = {
+  name: 'Ariadna',
+  subTitle: 'No hay subtítulo',
+  title: 'No hay título',
 }
