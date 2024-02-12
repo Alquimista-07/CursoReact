@@ -1,4 +1,5 @@
 // import { Fragment } from "react"
+import PropTypes from 'prop-types';
 
 //* 37. Tarea - Crear un nuevo componente
 
@@ -58,4 +59,10 @@ export const FirstApp = ( { title, subTitle } ) => {
     </>
     // </Fragment>
   )
+}
+
+// NOTA: Con los propTypes podemos definir su tipo, y que campos son obligatorios u opcionales
+FirstApp.propTypes = {
+  title : PropTypes.string.isRequired,
+  subTitle : PropTypes.number,
 }
