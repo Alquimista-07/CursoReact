@@ -1,0 +1,16 @@
+/* Estilos gobales */
+html, body {
+    background-color: #21232A;
+    /* NOTA: Color de la fuente en los fuentes */
+    color: white;
+    /* NOTA: Recordemos que el font family hace que utilice la primera, si no la tiene la segunda y si no la tercera */
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 1.3rem;
+    padding: 70px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
