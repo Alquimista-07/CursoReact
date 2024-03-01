@@ -1,12 +1,20 @@
 module.exports = {
   presets: [
     [
-      "@babel/preset-env",
+      '@babel/preset-env',
       {
         targets: {
-          node: "current",
+          esmodules: true,
         },
       },
     ],
+    // NOTA: Para que funcione este preset-react es necesario instalarlo ejecutando el comando
+    //       yarn add -D @babel/preset-react
+    [
+      '@babel/preset-react',
+      {
+        runtime: 'automatic',
+      }
+    ]
   ],
 };
