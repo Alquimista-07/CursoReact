@@ -6,11 +6,11 @@ import ReactDOM from 'react-dom/client';
 //       la función o el functional component 
 // import { HelloWorldApp } from './HelloWorldApp';
 
-// import { FirstApp } from './FirstApp';
+import { FirstApp } from './FirstApp';
 
 // Importación de los estilos css globales que creamos
 import './styles.css';
-import { CounterApp } from './CounterApp';
+// import { CounterApp } from './CounterApp';
 
 // Si hubieramos exportado por defecto la importación podría ser de la siguiente manera:
 // import HelloApp from './HelloWorldApp';
@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* <HelloWorldApp /> */}
         {/* Por lo tanto la si exportaramos e importaramos de la forma por defecto entonces la usariamos de la siguiente manera: */}
         {/* <HelloApp/> */}
-        {/* <FirstApp title = "Hola, Soy Goku!" /> */}
-        <CounterApp value={ 10 }/>
+        <FirstApp />
+        {/* {<CounterApp value={ 10 }/>} */}
     </React.StrictMode>
 );
