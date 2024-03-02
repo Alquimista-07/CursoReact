@@ -42,7 +42,7 @@ export const FirstApp = ( { title, subTitle } ) => {
    
     // <Fragment>
     <>
-        <h1>{ title }</h1>
+        <div data-testid="test-title">{ title }</div>
         <h1>{ newMessage.title }</h1>
         <code>{ JSON.stringify(newMessage) }</code>
         <p>Soy un subtitulo</p>
