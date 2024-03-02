@@ -42,8 +42,8 @@ export const FirstApp = ( { title, subTitle } ) => {
    
     // <Fragment>
     <>
-        <div data-testid="test-title">{ title }</div>
-        <h1>{ newMessage.title }</h1>
+        <h1 data-testid="test-title">{ title }</h1>
+        {/* <h1>{ newMessage.title }</h1> */}
         <code>{ JSON.stringify(newMessage) }</code>
         <p>Soy un subtitulo</p>
         <p>{ subTitle }</p>
@@ -55,7 +55,7 @@ export const FirstApp = ( { title, subTitle } ) => {
             objeto es lo que se trataría de serializar o imprimir lo cual como vimos antes nos da un error e incluso podría cusar errores de dependecia
             cíclicas y por eso React no lo hace.
         */}
-        <h1>{ getResult(4,3) }</h1>
+        {/* <h1>{ getResult(4,3) }</h1> */}
     </>
     // </Fragment>
   )
